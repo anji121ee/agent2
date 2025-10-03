@@ -1,0 +1,25 @@
+{
+  "name": "agent2",
+  "version": "1.0.0",
+  "description": "Chrome DevTools MCP powered agent for generating test plans.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/index.js",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "chrome-devtools-mcp": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
